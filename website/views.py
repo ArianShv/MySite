@@ -14,7 +14,7 @@ def about_views(request):
     return render(request, 'About.html')
 
 def contact_views(request):
-    return render(request, 'mashqi/contact.html')
+    return render(request, 'contact.html')
 
 def main_views(request):
     return HttpResponse('Main Page! Welcome...')
