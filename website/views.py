@@ -11,10 +11,10 @@ def home_views(request):
     return HttpResponse('Home Page')
 
 def about_views(request):
-    return HttpResponse('About Page')
+    return render(request, 'About.html')
 
 def contact_views(request):
-    return HttpResponse('Contact Page')
+    return render(request, 'mashqi/contact.html')
 
 def main_views(request):
     return HttpResponse('Main Page! Welcome...')
