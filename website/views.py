@@ -7,14 +7,14 @@ def http_test(request):
 def json_test(request):
     return JsonResponse({'res': 'mashi goloo inam az *json-test* boro berim'})
 
-def home_views(request):
-    return HttpResponse('Home Page')
+def index_views(request):
+    return render(request,'website/index.html')
 
 def about_views(request):
-    return render(request, 'About.html')
+    return render(request, 'website/About.html')
 
 def contact_views(request):
-    return render(request, 'contact.html')
+    return render(request, 'website/contact.html')
 
 def main_views(request):
     return HttpResponse('Main Page! Welcome...')
